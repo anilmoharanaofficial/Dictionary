@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #a544ec;
+}
+
+body {
+  margin-top: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  body {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+}

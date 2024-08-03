@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  font-size: 3rem;
+}
+
+.white__moon {
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 3rem;
+  }
+}

@@ -79,6 +79,7 @@ li {
 .synonyms {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .show__synonyms {

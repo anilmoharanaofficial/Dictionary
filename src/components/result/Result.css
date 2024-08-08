@@ -1,3 +1,102 @@
-.result {
-  margin-top: 1.2rem;
+.result__container {
+  margin-top: 2.2rem;
+}
+
+.word {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.word {
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    color: var(--main-color);
+  }
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background-color: #e9d0fa;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.play__btn {
+  color: var(--main-color);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Diplay Results */
+
+.results {
+  margin-top: 3rem;
+}
+
+.heading {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.line {
+  background-color: black;
+  padding: 0.1px;
+  width: 100%;
+  opacity: 0.1;
+}
+
+.meanings {
+  margin-top: 2rem;
+
+  p {
+    opacity: 0.5;
+  }
+}
+
+.definitions {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+li::marker {
+  color: var(--main-color);
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.synonyms {
+  display: flex;
+  gap: 1rem;
+}
+
+.show__synonyms {
+  color: var(--main-color);
+}
+
+.verb__container {
+  margin-top: 2rem;
+}
+
+.source__link {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.link__icon {
+  font-size: 12px;
+  color: var(--main-color);
 }

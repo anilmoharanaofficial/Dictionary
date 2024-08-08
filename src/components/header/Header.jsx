@@ -1,15 +1,26 @@
 import "./Header.css";
 import { LuBookMinus } from "react-icons/lu";
-import { FaRegMoon } from "react-icons/fa";
+import { IoMoonOutline } from "react-icons/io5";
+import { IoSunny } from "react-icons/io5";
 
-function Header() {
+function Header({ darkMode, handleDarkMode }) {
   return (
     <div className="header">
       <div>
         <LuBookMinus className="logo" />
       </div>
       <div>
-        <FaRegMoon className="white__moon" />
+        {!darkMode ? (
+          <IoMoonOutline
+            className="white__moon"
+            onClick={() => handleDarkMode(true)}
+          />
+        ) : (
+          <IoSunny
+            className="light__mode"
+            onClick={() => handleDarkMode(false)}
+          />
+        )}
       </div>
     </div>
   );

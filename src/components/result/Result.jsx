@@ -9,8 +9,6 @@ function Result({ result }) {
   const [ukPhonetic, usPhonetic] = phonetics;
   const [data] = meanings;
 
-  console.log(data?.synonyms);
-
   // Handle Adiou
   const audioRef = useRef(null);
 

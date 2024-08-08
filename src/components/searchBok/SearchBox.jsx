@@ -17,7 +17,7 @@ function SearchBox({ onSearch, word }) {
     <div className="serach__area">
       <input
         type="text"
-        placeholder="Type Here"
+        placeholder="Type Here and Hit Enter"
         className="search__box"
         value={currentWord}
         onChange={handleInput}

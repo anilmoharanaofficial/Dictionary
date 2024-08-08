@@ -3,9 +3,10 @@ import SearchBox from "./components/searchBok/SearchBox";
 import useAPI from "./api/useAPI";
 import Result from "./components/result/Result";
 import { useEffect, useState } from "react";
+import Home from "./home/Home";
 
 function App() {
-  const [word, setWord] = useState("Computer");
+  const [word, setWord] = useState();
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const onSearch = (newWord) => {
@@ -27,11 +28,13 @@ function App() {
   }, [isDarkMode]);
 
   return (
-    <div>
-      <Header darkMode={isDarkMode} handleDarkMode={handleDarkMode} />
-      <SearchBox onSearch={onSearch} word={word} />
-      <Result result={result} />
-    </div>
+    <>
+      <div>
+        <Header darkMode={isDarkMode} handleDarkMode={handleDarkMode} />
+        <SearchBox onSearch={onSearch} word={word} />
+        {word ? <Result result={result} /> : <Home />}
+      </div>
+    </>
   );
 }
 
